@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Seachfragement">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="341dp"
+                    android:layout_height="41dp"
+                    android:layout_alignStart="@+id/searchoptions"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="  search........."
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/searchoptions"
+                    android:layout_width="44dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="124dp"
+                    android:alpha="0.7"
+                    android:src="@mipmap/search_icon" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/colorprimaryblack"
+        android:textOff="USERS"
+        android:textOn="RECIPES"
+        android:textStyle="bold"
+        android:thumb="@drawable/swt_thumb"
+        app:showText="true"
+        app:track="@drawable/swt_track" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchbutton"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

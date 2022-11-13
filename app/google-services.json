@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716206100550",
+    "firebase_url": "https://foodbook-5f6bf.firebaseio.com",
+    "project_id": "foodbook-5f6bf",
+    "storage_bucket": "foodbook-5f6bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716206100550:android:3bc200daf155510855fa47",
+        "android_client_info": {
+          "package_name": "com.example.foodbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716206100550-o3vso0dl9dd1d98slnf822hnth3kj46v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCavsffaHxcWtY-ODP32QSvjGb6GAdpib4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716206100550-o3vso0dl9dd1d98slnf822hnth3kj46v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
